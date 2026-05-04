@@ -1,4 +1,4 @@
-Given two integers a and b, return the sum of the two integers without using the operators + and -.
+*****Given two integers a and b, return the sum of the two integers without using the operators + and -.
 Example 1:
 Input: a = 1, b = 2
 Output: 3
@@ -13,5 +13,28 @@ class Solution {
          b=c;
        }
        return a;
+    }
+}
+****SWAPPING OF TWO VARIABLES WITHOUT USING VARIABLE
+class Main {
+    public static void main(String[] args) {
+       int a=1,b=2;
+       a=a+b;
+       b=a-b;
+       a=a-b;
+       System.out.println(a);
+      System.out.println(b);
+    }
+}
+***swapping of vtwo numbers using one operator
+class Main {
+    public static void main(String[] args) {
+       int a=1,b=2;
+       
+       a=a^b;
+       b=a^b;
+       a=a^b;
+       System.out.println(a);
+      System.out.println(b);
     }
 }
