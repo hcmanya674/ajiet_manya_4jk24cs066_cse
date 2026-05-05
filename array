@@ -1,1 +1,24 @@
+//finding the max and min element in the array,
 
+class Main {
+    public static void main(String[] args) {
+     // int arr[]=new int[5];
+      int[] arr={1,4,2,9,3};
+      int min=arr[0];
+      for(int i=1;i<arr.length;i++)
+      {
+        
+          if(min>arr[i])
+           min=arr[i];
+      }
+      int max=arr[0];
+      for(int i=1;i<arr.length;i++)
+      {
+        
+          if(max<arr[i])
+           max=arr[i];
+      }
+      System.out.println(min);
+       System.out.println(max);
+    }
+}
