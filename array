@@ -116,3 +116,27 @@ class Main {
             System.out.println("Not Anagram");
     }
 }
+// counting the words
+
+import java.util.Arrays;
+
+class Main {
+    public static void main(String[] args) {
+        String str = "java is a object oriented language";
+        
+        int count = 0;
+
+        boolean inWord = false;
+
+        for (char ch : str.toCharArray()) {
+            if (ch != ' ' && !inWord) {
+                count++;
+                inWord = true;
+            } else if (ch == ' ') {
+                inWord = false;
+            }
+        }
+
+        System.out.println("Word count: " + count);
+    }
+}
