@@ -164,5 +164,26 @@ class Main {
         System.out.println(k.get(c1));
        
     }
+
+
+///removing space between the string
+import java.util.Arrays;
+
+class Main {
+    public static void main(String[] args) {
+        String s1 = "java is a oopl";
+        String s2="";
+        for(int i=0;i<s1.length();i++)
+        {   char ch = s1.charAt(i);
+            if(ch ==' ')
+              continue;
+            else
+            s2=s2+s1.charAt(i);
+        }
+        System.out.println("hello");
+        System.out.println(s2);
+        
+    }
+}
 }
 }
