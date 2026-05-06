@@ -140,3 +140,29 @@ class Main {
         System.out.println("Word count: " + count);
     }
 }
+
+
+// finding the duplicates in the string using java collections
+
+import java.util.HashMap;
+import java.util.Collections;
+class Main {
+    public static void main(String[] args) {
+        HashMap<Character,Integer> k =new HashMap<>();
+        String s="college";
+        for(char c:s.toCharArray())
+        {
+             if(k.containsKey(c))
+             {
+                 k.put(c,k.get(c)+1);
+             }
+             else
+              k.put(c,1);
+        }
+        for(char c1:k.keySet())
+        { if(k.get(c1)>1)
+        System.out.println(k.get(c1));
+       
+    }
+}
+}
