@@ -1,0 +1,18 @@
+//arraylist operation
+
+import java.util.ArrayList;
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String>list=new ArrayList<>();
+        list.add("java");
+        list.add("python");
+        list.add("java");
+        list.add(0,"manya");
+        list.set(1,"ada");
+        list.remove(2);
+        //list.clear();
+        System.out.println(list);
+        System.out.println(list.get(0));
+        
+    }
+}
