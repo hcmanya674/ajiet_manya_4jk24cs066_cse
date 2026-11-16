@@ -46,3 +46,24 @@ Input: nums = [1,1,2]
 Output: 2, nums = [1,2,_]
 Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
 It does not matter what you leave beyond the returned k (hence they are underscores).
+
+
+
+
+
+
+3021. Alice and Bob Playing Flower Game
+Alice and Bob are playing a turn-based game on a field, with two lanes of flowers between them.
+There are x flowers in the first lane between Alice and Bob, and y flowers in the second lane between them.
+
+class Solution {
+    public long flowerGame(int n, int m) {
+       long count=0;
+       for(int i=1;i<=n;i++)
+       for(int j=1;j<=m;j++)
+       {
+        count+=(i+j)%2;
+       }
+       return (count); 
+    }
+}
