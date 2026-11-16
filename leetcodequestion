@@ -50,9 +50,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 
 
-
-
-3021. Alice and Bob Playing Flower Game
+*****3021. Alice and Bob Playing Flower Game****
 Alice and Bob are playing a turn-based game on a field, with two lanes of flowers between them.
 There are x flowers in the first lane between Alice and Bob, and y flowers in the second lane between them.
 
@@ -65,5 +63,11 @@ class Solution {
         count+=(i+j)%2;
        }
        return (count); 
+    }
+}
+AFTER OPTIMIZATION OF TIME COMPLEXITY
+class Solution {
+    public long flowerGame(int n, int m) {
+       return (long)n*m/2; 
     }
 }
