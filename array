@@ -275,3 +275,33 @@ class Main {
         System.out.println(countvalley);
     }
 }
+
+****Write a python program to verify if the given input string, combinations of characters '{' and '}', is well formed.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        int balance=0;
+        Scanner sc = new Scanner(System.in);
+        String path = sc.nextLine();
+        for(char x: path.toCharArray())
+            {
+                if(x =='{'){
+                    balance++;
+                  
+                }
+                if(x=='}')
+                {
+                    balance--;
+                    if(balance<0)
+                    break;
+                    if(balance==0)
+                    System.out.println("matching");
+                }
+            }
+        
+    if(balance==0)
+        System.out.println("matching");
+    else
+       System.out.println(" not matching"); 
+    }
+}
