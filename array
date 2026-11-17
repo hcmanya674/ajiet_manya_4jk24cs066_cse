@@ -326,3 +326,30 @@ class Main {
         }
     }
 }
+
+***finfing the first negative number in the array***
+example:ENETR THE ARRAY SIZE:
+5
+ENETR THE ARRAY element:
+1 -2 4 7 -3
+output:-2
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("ENETR THE ARRAY SIZE:");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        System.out.println("ENETR THE ARRAY element:");
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<0){
+                System.out.print(arr[i]);
+            break;
+            }
+        }
+    }
+}
