@@ -353,3 +353,29 @@ class Main {
         }
     }
 }
+
+
+***finding the frequecy of letters repiataion
+example: HelloWorld
+output:r:1
+d:1
+e:1
+W:1
+H:1
+l:3
+o:2
+import java.util.HashMap;
+class Main {
+    public static void main(String[] args) {
+        String text="HelloWorld";
+        char[] chars=text.toCharArray();
+        HashMap<Character,Integer> hp=new HashMap<>();
+        for(char c: chars){
+            int existingcount= hp.getOrDefault(c, 0);
+            hp.put(c, existingcount+ 1);
+     }
+        for(char c: hp.keySet()){
+        System.out.println(c +":"+ hp.get(c));
+    }
+    }
+}
