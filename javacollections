@@ -123,18 +123,21 @@ SOLUTION :
 import java.util.HashMap;
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-    HashMap<Integer,Integer>map=new HashMap<>();
-    for(int i=0;i<nums.length;i++)
-    {
-        int complement=target-nums[i];
-        if(map.containsKey(complement))
+        HashMap<Integer,Integer> map= new HashMap<>();
+        for(int i=0;i<nums.length;i++)
         {
-            return new int[]{map.get(complement),i};
+            int diff= target -nums[i];
+                if(map.containsKey(nums[i]))
+                {   int index = map.get(nums[i]);
+                    int[] result = {index, i};
+                    return result;
+                }
+                else
+                map.put(diff,i);
         }
-        map.put(nums[i],i);
-
+        return null;
+       
     }
-return new int[]{};
- 
+    
 }
-}
+
