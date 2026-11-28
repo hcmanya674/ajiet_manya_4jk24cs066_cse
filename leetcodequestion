@@ -683,3 +683,26 @@ class Solution {
         return first.substring(0,i);
     }
 }
+
+
+****151. Reverse Words in a String
+Example 1:
+
+Input: s = "the sky is blue"
+Output: "blue is sky the"
+class Solution {
+    public String reverseWords(String s) {
+        StringBuilder result=new StringBuilder();
+        String[] arr=s.trim().split("\\s+");
+    
+        for(int i=arr.length-1;i>=0;i--)
+        {
+            result.append(arr[i]);
+            if (i > 0) {
+                result.append(" ");
+        }
+        }
+        return result.toString();
+    
+}
+}
